@@ -1,0 +1,48 @@
+{
+  "name": "parse-server-azure-managed",
+  "version": "1.7.0",
+  "description": "Parse Server on Azure Managed Services",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anandanthony/nodehelloworldLinux"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "10.14.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "base-64": "^0.1.0",
+    "dotenv": "^6.2.0",
+    "eslint": "^4.18.1",
+    "eslint-plugin-flowtype": "^2.46.3",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "flow-bin": "0.94.0",
+    "husky": "^0.15.0-rc.8",
+    "jest": "^22.4.3",
+    "jest-flow-transform": "^1.0.1",
+    "lint-staged": "^7.0.0",
+    "nodemon": "^1.17.4",
+    "prettier": "^1.12.1"
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "node_modules/(?!parse)/"
+    ],
+    "transform": {
+      "^.+\\.js(?:\\.flow)?$": "jest-flow-transform"
+    }
+  },
+  "lint-staged": {
+    "*.js": "npm run lint"
+  }
+}
